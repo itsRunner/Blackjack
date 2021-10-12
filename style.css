@@ -1,0 +1,44 @@
+body
+{
+    background-color: #35654d;
+}
+
+.dealer
+{
+    margin: auto;
+    margin-top: 10%;
+    width: 9%;
+    height:15%;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.player
+{
+    margin: auto;
+    margin-top: 5%;
+    width: 9%;
+    height:15%;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+img
+{
+    width: auto;
+    height: 150px;
+    margin: auto;
+    padding: 10px;
+}
+
+.playerIMG
+{
+    margin-left: 30px;
+}
+
+span
+{
+    font-size: 35px;
+}
