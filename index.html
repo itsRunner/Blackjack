@@ -5,13 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <div class="dealer">
-      <img src="assets/dealer.png" class="dealerIMG">
-      <span class="dealerScore">0</span>
-    </div>
-    <div class="player">
-      <img src="assets/player.png" class="playerIMG">
-      <span class="playerScore">0</span>
+    <div class="outer">
+      <div class="middle">
+        <div class="inner">
+          <div class="gameStart">
+            <div class="logoBJ">
+              <h1 class="title">Runner's</h1>
+              <h1 class="title2">Blackjack</h1>
+              <img src="" id="behindCard">
+              <img src="" id="frontCard">
+              <button type="button" id="btnStart">Start the game!</button>
+            </div>
+          </div>
+          <div class="pokerTable">
+            <div class="dealerCards">
+              <!-- <img src="assets/cards/diamonds/2d.png" class="card1">
+              <img src="assets/cards/fd.png" class="card1"> -->
+            </div>
+            <div class="dealer">
+              <span class="dealerTXT">DEALER:</span>
+              <span class="dealerScore">0</span>
+            </div>
+            <div class="player">
+              <span class="playerTXT">PLAYER:</span>
+              <span class="playerScore">0</span>
+            </div>
+            <div class="playerCards">
+              <!-- <img src="assets/cards/spades/10s.png" class="card1">
+              <img src="assets/cards/hearts/Qh.png" class="card1"> -->
+            </div>
+            <button type="button" id="btnRestart">Restart</button>
+            <button type="button" id="btnHit">Hit</button>
+            <button type="button" id="btnHold">Hold</button>
+            <button type="button" id="btnDouble">Double Down</button>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="script.js"></script>
   </body>
