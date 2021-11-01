@@ -110,8 +110,6 @@ function createDeck()
             deck.push(allCards[i] + cardTypes[t]);
         }
     }
-
-    console.log("createDeck() = " + deck);
     shuffleDeck();
 }
 
@@ -129,7 +127,6 @@ function shuffleDeck()
         cards.push(tempCards[ranCard]);
         tempCards.splice(ranCard, 1);
     }
-    console.log("shufleDeck() = " + cards);
 }
 
 function dealCards()
@@ -326,8 +323,6 @@ function hitCard()
 
 function turnDealerCard()
 {
-    console.log(dCards);
-
     const fdCard = document.getElementById('face-down');
 
     fdCard.src = `assets/cards/${dCards[1]}.png`;
