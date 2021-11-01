@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css">
@@ -19,25 +20,29 @@
           </div>
           <div class="pokerTable">
             <div class="dealerCards">
-              <!-- <img src="assets/cards/diamonds/2d.png" class="card1">
-              <img src="assets/cards/fd.png" class="card1"> -->
+              <!-- Cards go inside -->
             </div>
-            <div class="dealer">
-              <span class="dealerTXT">DEALER:</span>
-              <span class="dealerScore">0</span>
-            </div>
-            <div class="player">
-              <span class="playerTXT">PLAYER:</span>
-              <span class="playerScore">0</span>
+            <div class="scores">
+              <div class="dealer">
+                <span class="dealerTXT">DEALER:</span>
+                <span class="dealerScore">0</span>
+              </div>
+              <div class="player">
+                <span class="playerTXT">PLAYER:</span>
+                <span class="playerScore">0</span>
+              </div>
             </div>
             <div class="playerCards">
-              <!-- <img src="assets/cards/spades/10s.png" class="card1">
-              <img src="assets/cards/hearts/Qh.png" class="card1"> -->
+              <!-- Cards go inside -->
             </div>
-            <button type="button" id="btnRestart">Restart</button>
-            <button type="button" id="btnHit">Hit</button>
-            <button type="button" id="btnHold">Hold</button>
-            <button type="button" id="btnDouble">Double Down</button>
+            <div class="buttons hidden">
+              <button id="btnRestart" class="button">Restart <i class="fas fa-redo"></i></button>
+              <button id="btnHit" class="button">Hit <i class="fas fa-angle-double-down"></i></button>
+              <button id="btnHold" class="button">Hold <i class="fas fa-hand-paper"></i></button>
+            </div>
+            <div class="gameTextForPlayer">
+              <div class="textForPlayer">Text for the player!</div>
+            </div>
           </div>
         </div>
       </div>

@@ -1,6 +1,9 @@
 body
 {
     background-color: #35654d;
+    background-image: url("assets/bg.jpg");
+    background-repeat: repeat;
+    background-size: 330px;
 }
 
 /*
@@ -72,57 +75,129 @@ h1
     Game start =>
 */
 
-.dealer
+.pokerTable
 {
-    margin: auto;
-    --margin-top: 15%;
-    width: 50%;
-    --height:15%;
-    border: 3px solid rgb(255, 255, 255);
-    border-radius: 5px;
-    padding: 10px;
-
-    display: flex;
-    justify-content: center;
+    position: relative;
 }
 
-.player
+.scores
 {
-    margin: auto;
-    margin-top: 0.5%;
-    width: 50%;
-    height:15%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+
+    color: rgb(255, 255, 255);
+}
+
+.scores div
+{
     border: 3px solid rgb(255, 255, 255);
     border-radius: 5px;
-    padding: 10px;
+    
+    height: 25px;
+    width: 215px;
 
-    display: flex;
+    align-items: center;
     justify-content: center;
+    
+    display: flex;
+
+    margin-top: 1px;
 }
 
 .dealerCards
 {
-    margin: auto;
-    margin-bottom: 20%;
     display: flex;
     justify-content: center;
+
+    bottom: 35%;
+    height: 160px;
 }
 
 .playerCards
 {
-    margin: auto;
-    margin-top: 20%;
     display: flex;
     justify-content: center;
+
+    margin-top: 25%;
+    height: 160px;
 }
 
-/* button
+.buttons
 {
+    --background-color:black;
+    width: 400px;
+    height: 20px;
+    position:absolute;
+
     margin-top: 20%;
-    --display: flex;
+    
+    display: inline-flex;
     justify-content: center;
-    vertical-align: middle;
-} */
+    align-items: center;
+}
+
+.buttons button:hover
+{
+    cursor: pointer;
+    background-color: #438b46;
+}
+
+.buttons button i
+{
+    margin-left: 5px;
+    font-size: 15px;
+}
+
+.button
+{
+    background-color: #4caf4f63;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 4px;
+    margin: 2px;
+}
+
+.gameTextForPlayer
+{
+    position: fixed;
+    bottom: 0px;
+    width: 400px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.5);
+    --opacity: 0.5;
+    justify-content: center;
+    --text-align: center;
+    border-radius: 1%;
+    border: 3px solid rgb(53, 119, 68);
+}
+
+.gameTextForPlayer div
+{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100px;
+}
+
+.textForPlayer
+{
+    bottom: 50%;
+    font-size: 30px;
+    color: white;
+}
 
 img
 {
