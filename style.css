@@ -15,13 +15,43 @@ h1
     color: white;
 }
 
-#btnStart
+.buttonStart
 {
+    --background-color:black;
+    width: 165px;
+    height: 20px;
+    position:absolute;
+
     margin-top: 20%;
+    
+    display: inline-flex;
     justify-content: center;
+    align-items: center;
+}
+
+
+
+.buttonStart button:hover
+{
+    cursor: pointer;
+    background-color: #438b46;
+}
+
+.buttonStart button i
+{
+    font-size: 15px;
+}
+
+.btnStart
+{
+    justify-content: center;
+    vertical-align: middle;
+    border: none;
+    background-color: #4caf4f63;
+    border-radius: 5%;
     display: flex;
     position: absolute;
-    margin-left: 20px;
+    color: white;
 }
 
 .title
@@ -140,6 +170,8 @@ h1
     justify-content: center;
     align-items: center;
 }
+
+
 
 .buttons button:hover
 {

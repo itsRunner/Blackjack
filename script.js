@@ -12,7 +12,7 @@ const
 
 const
     mainMenu = document.querySelector('.gameStart'),
-    startButton = document.getElementById("btnStart"),
+    startButton = document.querySelector(".btnStart"),
     behindCard = document.getElementById('behindCard'),
     frontCard = document.getElementById('frontCard'),
     mainGame = document.querySelector('.pokerTable'),
@@ -49,13 +49,17 @@ const init = () =>
     resetVars();
     mainGame.classList.add('hidden');
 
-    createDeck();
     randomLogoCards();
 }
 init();
 
 function resetVars()
 {
+    deck.length = 0;
+    cards.length = 0;
+
+    createDeck();
+    
     pCards.length = 0;
     dCards.length = 0;
 
