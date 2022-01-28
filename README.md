@@ -1,5 +1,6 @@
 # Blackjack by itsRunner
  
+Test it out for yourself here ;) : https://itsrunner.github.io/Blackjack/
 
 ## Table of contents
 * [General info](#general-info)
